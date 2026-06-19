@@ -1,15 +1,20 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, Suspense } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import CanvasScene from "@/components/3d/CanvasScene";
 import { projects } from "@/data/projects";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const CanvasScene = dynamic(() => import("@/components/3d/CanvasScene"), {
+  ssr: false,
+  loading: () => <div className="absolute inset-0 z-0 bg-black" />,
+});
 
 export default function Home() {
   const heroTextRef = useRef<HTMLHeadingElement>(null);
@@ -83,7 +88,9 @@ export default function Home() {
   return (
     <>
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <CanvasScene />
+        <Suspense fallback={<div className="absolute inset-0 z-0 bg-black" />}>
+          <CanvasScene />
+        </Suspense>
         <div className="relative z-10 text-center px-4">
           <h1 ref={heroTextRef} className="text-6xl md:text-8xl font-black uppercase tracking-tighter" style={{ fontFamily: "var(--font-heading)" }}>
             <span className="block text-white">We are</span>
@@ -95,7 +102,7 @@ export default function Home() {
             transition={{ delay: 1.2, duration: 1 }}
             className="mt-6 text-lg md:text-2xl text-gray-400 font-medium tracking-wide"
           >
-            Awwwards-winning Creative & Marketing Agency
+            Awwwards-winning Creative &amp; Marketing Agency
           </motion.p>
         </div>
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/50">
@@ -139,6 +146,8 @@ export default function Home() {
                       src={project.thumbnail}
                       alt={project.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      priority={idx < 2}
                       className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

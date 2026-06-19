@@ -46,6 +46,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
               src={project.thumbnail}
               alt={project.title}
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
               priority
             />
@@ -60,6 +61,7 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
                   src={img}
                   alt={`${project.title} - ${idx + 1}`}
                   fill
+                  sizes="100vw"
                   className="object-cover"
                 />
               </div>

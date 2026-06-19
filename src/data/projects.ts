@@ -17,8 +17,8 @@ export const projects: Project[] = [
     client: "Al Bahrain TV",
     description: "A comprehensive brand identity and proposal presentation for Al Bahrain TV, modernizing their digital and physical presence to appeal to a contemporary audience.",
     year: "2026",
-    images: ["/images/al_bahrain_tv.png"],
-    thumbnail: "/images/al_bahrain_tv.png",
+    images: ["/images/al_bahrain_tv.webp"],
+    thumbnail: "/images/al_bahrain_tv.webp",
   },
   {
     id: "chez-kateline",
@@ -27,8 +27,8 @@ export const projects: Project[] = [
     client: "Chez Kateline",
     description: "Premium restaurant branding and visual identity. Creating a cohesive aesthetic that translates the culinary excellence into a visual feast.",
     year: "2025",
-    images: ["/images/chez_kateline.png"],
-    thumbnail: "/images/chez_kateline.png",
+    images: ["/images/chez_kateline.webp"],
+    thumbnail: "/images/chez_kateline.webp",
   },
   {
     id: "jettz-burger",
@@ -37,8 +37,8 @@ export const projects: Project[] = [
     client: "Jettz Burger",
     description: "Dynamic and bold branding for a fast-casual burger joint. The identity was designed to be instantly recognizable and highly engaging.",
     year: "2025",
-    images: ["/images/fb_branding.png"],
-    thumbnail: "/images/fb_branding.png",
+    images: ["/images/fb_branding.webp"],
+    thumbnail: "/images/fb_branding.webp",
   },
   {
     id: "mtg",
@@ -47,8 +47,8 @@ export const projects: Project[] = [
     client: "MTG",
     description: "High-octane visual campaign and branding for MTG showrooms. We focused on sleek lines, dark aesthetics, and premium presentation.",
     year: "2026",
-    images: ["/images/auto_showroom.png"],
-    thumbnail: "/images/auto_showroom.png",
+    images: ["/images/auto_showroom.webp"],
+    thumbnail: "/images/auto_showroom.webp",
   },
   {
     id: "metl-valley",
@@ -57,8 +57,8 @@ export const projects: Project[] = [
     client: "Metl Valley",
     description: "A solid and reliable brand identity for an industrial powerhouse. The design language communicates trust, strength, and innovation.",
     year: "2024",
-    images: ["/images/metl_valley.png"],
-    thumbnail: "/images/metl_valley.png",
+    images: ["/images/metl_valley.webp"],
+    thumbnail: "/images/metl_valley.webp",
   },
   {
     id: "drip-coffee",
@@ -67,8 +67,8 @@ export const projects: Project[] = [
     client: "Drip Coffee",
     description: "Minimalist and artisanal branding for a specialty coffee shop, focusing on the craft of coffee making.",
     year: "2025",
-    images: ["/images/drip_coffee.png"],
-    thumbnail: "/images/drip_coffee.png",
+    images: ["/images/drip_coffee.webp"],
+    thumbnail: "/images/drip_coffee.webp",
   },
   {
     id: "el-ghawy",
@@ -77,8 +77,8 @@ export const projects: Project[] = [
     client: "El Ghawy",
     description: "High-end visual branding for an elite automotive enthusiast brand. The identity captures the sleek, adrenaline-fueled passion of luxury car culture with cinematic lighting and dark, premium aesthetics.",
     year: "2026",
-    images: ["/images/el_ghawy_cars.png"],
-    thumbnail: "/images/el_ghawy_cars.png",
+    images: ["/images/el_ghawy_cars.webp"],
+    thumbnail: "/images/el_ghawy_cars.webp",
   },
   {
     id: "kataleya",
@@ -87,8 +87,8 @@ export const projects: Project[] = [
     client: "Kataleya",
     description: "Elegant and sophisticated branding for a high-end dining experience.",
     year: "2024",
-    images: ["/images/kataleya.png"],
-    thumbnail: "/images/kataleya.png",
+    images: ["/images/kataleya.webp"],
+    thumbnail: "/images/kataleya.webp",
   },
   {
     id: "octa",
@@ -97,7 +97,7 @@ export const projects: Project[] = [
     client: "Octa",
     description: "A bold, geometric, and highly scalable advertising campaign structure.",
     year: "2025",
-    images: ["/images/madbird_hero.png"],
-    thumbnail: "/images/madbird_hero.png",
+    images: ["/images/madbird_hero.webp"],
+    thumbnail: "/images/madbird_hero.webp",
   }
 ];
